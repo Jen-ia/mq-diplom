@@ -1,0 +1,465 @@
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    url("mq-diplom/fonts/OpenSans-Regular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    url("mq-diplom/fonts/OpenSans-Bold.woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  position: relative;
+  /*   min-height: 400px; */
+  min-height: 449px;
+  min-width: 1660px;
+
+  background-image: url("mq-diplom/images/banner-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  background-color: #000000;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.header-content {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 28px 15px 0 35px;
+}
+
+.top-header {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.logo-img {
+  padding-left: 18px;
+  width: 179px;
+}
+
+.menu {
+  padding-top: 12px;
+  padding-right: 13px;
+}
+
+.menu-item {
+  display: inline;
+  list-style-type: none;
+  text-transform: uppercase;
+  vertical-align: top;
+  padding-left: 32px;
+
+  font-weight: normal;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.menu-item:hover,
+.main-tag:hover {
+  text-decoration: underline;
+}
+
+.site-title {
+  width: 690px;
+  margin: 0 auto;
+
+  position: relative;
+  text-align: center;
+  padding-top: 99px;
+  line-height: 1.7;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 45px;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.page {
+  width: 1660px;
+  margin: 0 auto;
+}
+
+.page-content {
+  width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  margin-top: 64px;
+  padding-left: 25px;
+}
+
+.content-img {
+  width: 382px;
+  max-height: 294px;
+  margin-bottom: 59px;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: row;
+  /*   flex-wrap: nowrap; */
+  /*   justify-content: space-between; */
+}
+
+.article-post-info {
+  vertical-align: top;
+  margin-top: -3px;
+  margin-left: 26px;
+  width: 367px;
+  min-height: 294px;
+  margin-bottom: 58px;
+}
+
+.main-tag {
+  display: inline;
+  text-align: left;
+  padding-left: 1px;
+
+  text-transform: uppercase;
+  list-style-type: none;
+
+  font-weight: bold;
+  font-size: 14px;
+  color: #b59f5b;
+}
+
+.main-tag:nth-child(n + 2) {
+  padding-left: 15px;
+}
+
+.main-post-title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #0f0d0e;
+  text-transform: uppercase;
+  padding: 8px 0 26px;
+  /*     letter-spacing: 0.1px; */
+  line-height: 24.5px;
+}
+
+.main-time {
+  font-weight: normal;
+  font-size: 12px;
+  color: #888888;
+  padding-right: 11px;
+}
+
+.post-author {
+  font-weight: bold;
+  font-size: 12px;
+  color: #000000;
+}
+
+.article-text {
+  margin-top: 43px;
+  /* line-height: 10px; */
+  font-weight: normal;
+  line-height: 22.5px;
+  font-size: 15px;
+  color: #0f0d0e;
+}
+
+p:nth-of-type(n + 2) {
+  padding-top: 8px;
+}
+
+aside {
+  margin-top: 59px;
+  margin-right: -8px;
+  width: 286px;
+}
+
+.aside-title {
+  position: relative;
+  text-align: center;
+  padding-bottom: 29px;
+  margin-left: -13px;
+  letter-spacing: -0.7px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  color: #0f0d0e;
+}
+
+.aside-title::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  padding-top: 8px;
+
+  width: 66px;
+  border-bottom: 3px solid #b59f5b;
+  opacity: 0.4;
+}
+
+.new-post {
+  display: flex;
+  padding-bottom: 22px;
+}
+
+.aside-img {
+  width: 70px;
+}
+
+.aside-post-info {
+  width: 182px;
+  padding-left: 19px;
+  margin-top: -5px;
+}
+
+.aside-time {
+  font-weight: normal;
+  font-size: 12px;
+  color: #000000;
+  opacity: 0.54;
+  /*   padding-right: 11px;
+  padding-bottom: 10px; */
+}
+
+.news-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+}
+
+.news-title:hover,
+.theme:hover,
+.main-post-title:hover {
+  color: #b59f5b;
+}
+
+.search-form {
+  /*   padding-top: 38px;
+  padding-bottom: 62px;
+  padding-right: 8px; */
+  padding: 39px 0px 57px;
+  display: flex;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+input {
+  padding-left: 19px;
+
+  font-weight: normal;
+  font-size: 13px;
+  color: #000000;
+  opacity: 0.54;
+}
+
+.search-field {
+  width: 223px;
+  height: 47px;
+  background-color: #f4f7f6;
+  border: none;
+}
+
+.search-field:focus,
+.email-field:focus {
+  outline: 1px solid #b59f5b;
+  outline-offset: -1px;
+}
+
+.search-button {
+  width: 47px;
+  height: 47px;
+  background-color: #b59f5b;
+  border: none;
+
+  background-image: url("mq-diplom/svg/search.svg");
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: center center;
+}
+
+.search-button:hover,
+.email-button:hover {
+  background-color: #323232;
+}
+
+.email-field {
+  margin-top: -6px;
+  width: 253px;
+  height: 48px;
+  background-color: #f4f7f6;
+  border: none;
+}
+
+.email-button {
+  margin-top: 18px;
+  margin-left: 1px;
+  width: 270px;
+  height: 48px;
+  background-color: #b59f5b;
+  border: none;
+  margin-bottom: 57px;
+}
+
+.email-button-text {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  /*   margin-top: -7px;
+  margin-left: -6px; */
+  margin-bottom: 52px;
+  margin-top: -6px;
+}
+
+.tag-item {
+  list-style-type: none;
+  line-height: 36px;
+  text-align: center;
+  padding-left: 19px;
+  padding-right: 19px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  color: #0f0d0e;
+  outline: 3px solid #f4f3f1;
+  outline-offset: -7px;
+}
+
+.tag-item:hover {
+  outline-color: #b59f5b;
+}
+
+.themes {
+  margin-top: -23px;
+  margin-left: 2px;
+}
+
+.theme {
+  position: relative;
+  list-style-type: none;
+
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+  line-height: 43px;
+}
+
+.theme::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 272px;
+  height: 1px;
+  background-color: #eeeeee;
+}
+
+.post-amount {
+  font-weight: bold;
+  font-size: 12px;
+  color: #b59f5b;
+}
+
+footer {
+  width: 1660px;
+  margin: 2px auto;
+}
+
+.socials {
+  padding-left: 11px;
+  width: 1170px;
+  vertical-align: middle;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 83px;
+  margin: 2px 256px 69px;
+  background-color: #f4f7f6;
+  box-sizing: border-box;
+}
+
+.social-links:last-child {
+  padding-right: 0px;
+}
+
+.dribbble-link {
+  width: 20px;
+  padding-right: 48px;
+  /*   padding-right: 30px; */
+  background-image: url("mq-diplom/svg/001-dribbble.svg");
+  background-repeat: no-repeat;
+}
+
+.pinterest-link {
+  padding-right: 46px;
+  width: 20px;
+  background-image: url("mq-diplom/svg/002-pinterest.svg");
+  background-repeat: no-repeat;
+}
+
+.tumblr-link {
+  width: 20px;
+  padding-right: 30px;
+  background-image: url("mq-diplom/svg/003-tumblr.svg");
+  background-repeat: no-repeat;
+}
+
+.copyright-text {
+  display: block;
+  margin: 0px auto;
+  width: 1660px;
+  padding-left: 29px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  color: #999999;
+}
