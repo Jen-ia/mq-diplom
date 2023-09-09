@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Open Sans";
   src: local("Open Sans"),
-    url("../fonts/OpenSans-Regular.woff");
+    url("/fonts/OpenSans-Regular.woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: "Open Sans";
   src: local("Open Sans"),
-    url("../fonts/OpenSans-Bold.woff");
+    url("/fonts/OpenSans-Bold.woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -30,7 +30,7 @@ header {
   min-height: 449px;
   min-width: 1660px;
 
-  background-image: url("../images/banner-bg.jpg");
+  background-image: url("/images/banner-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
@@ -134,8 +134,6 @@ main {
 .article-content {
   display: flex;
   flex-direction: row;
-  /*   flex-wrap: nowrap; */
-  /*   justify-content: space-between; */
 }
 
 .article-post-info {
@@ -249,8 +247,6 @@ aside {
   font-size: 12px;
   color: #000000;
   opacity: 0.54;
-  /*   padding-right: 11px;
-  padding-bottom: 10px; */
 }
 
 .news-title {
@@ -310,7 +306,7 @@ input {
   background-color: #b59f5b;
   border: none;
 
-  background-image: url("../svg/search.svg");
+  background-image: url("/svg/search.svg");
   background-repeat: no-repeat;
   background-size: 18px;
   background-position: center center;
@@ -430,22 +426,21 @@ footer {
 .dribbble-link {
   width: 20px;
   padding-right: 48px;
-  /*   padding-right: 30px; */
-  background-image: url("../svg/001-dribbble.svg");
+  background-image: url("/svg/001-dribbble.svg");
   background-repeat: no-repeat;
 }
 
 .pinterest-link {
   padding-right: 46px;
   width: 20px;
-  background-image: url("../svg/002-pinterest.svg");
+  background-image: url("/svg/002-pinterest.svg");
   background-repeat: no-repeat;
 }
 
 .tumblr-link {
   width: 20px;
   padding-right: 30px;
-  background-image: url("../svg/003-tumblr.svg");
+  background-image: url("/svg/003-tumblr.svg");
   background-repeat: no-repeat;
 }
 
