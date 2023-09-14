@@ -1150,7 +1150,15 @@ footer {
   }
 }
 
-@media (max-width:640px) {
+@media (min-width: 641px) and (max-width:1200px) and (orientation: landscape) {
+  .trends {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    column-gap: 5px;
+  }
+}
+
+@media (max-width:640px){
   .pop-up-content {
     width: 330px;
     height: 547px;
@@ -1393,5 +1401,13 @@ footer {
 
   .copyright-text {
     margin: -24px auto;
+  }
+}
+
+@media (max-width:640px) and (orientation: landscape) {
+  .trends {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    column-gap: 5px;
   }
 }
