@@ -122,9 +122,9 @@ textarea {
   z-index: 2;
 }
 
-/*._hidden{
+._hidden{
     display: none;
-}*/
+}
 
 .pop-up-content {
   width: 390px;
@@ -178,7 +178,7 @@ textarea {
 }
 
 .pop-up-fields {
-  width: 100%;
+  width: 316px;
   display: block;
   font-weight: normal;
   font-size: 13px;
@@ -652,6 +652,9 @@ input {
 .search-field:focus,
 .email-field:focus,
 .drop-list:focus,
+.textearea-pop-up:focus,
+.text-field:focus,
+.drop-list:focus,
 .textearea-pop-up:focus {
   outline: 1px solid #b59f5b;
   outline-offset: -1px;
@@ -671,6 +674,8 @@ input {
 
 .search-button:hover,
 .email-button:hover,
+.pop-up-button:hover,
+.button:hover,
 .pop-up-button:hover {
   background-color: #323232;
 }
