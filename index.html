@@ -7,6 +7,37 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+  <div class="pop-up _hidden">
+    <div class="pop-up-content">
+      <h2 class="pop-up-title">ваш фидбек</h2>
+        <form class="form-pop-up">
+          <label class="pop-up-fields">Как часто вы заходите на сайт?</label>
+          <select class="drop-list">
+            <option selected class="option-field">
+              Почти каждый день
+            </option>
+            <option class="option-field">Раз в несколько дней</option>
+            <option class="option-field">Раз в несколько недель</option>
+            <option class="option-field">Несколько раз в год</option>
+          </select>
+          <div class="pop-up-radio">
+            <label class="pop-up-fields">Вы подписаны на e-mail рассылку?</label>
+            <input type="radio" name="radiobutton" class="radiobutton" id="radiobutton-yes" checked>
+            <label for="radiobutton-yes" class="radio-text">Да</label>
+            <input type="radio" name="radiobutton" class="radiobutton" id="radiobutton-no">
+            <label for="radiobutton-no" class="radio-text">Нет</label>
+          </div>
+          <label class="pop-up-fields">
+            Расскажите, какой контент вы хотели бы видеть<br/>на нашем сайте?
+            <textarea class="textearea-pop-up">Может, больше рецептов?
+            </textarea>
+          </label>
+          <button class="pop-up-button">
+            <span class="button-text">Отправить</span>
+          </button>
+        </form>        
+    </div>
+  </div>
 	<header>
   <div class="header-content">
     <div class="top-header">
@@ -47,7 +78,7 @@
     </h2>
     <article class="article-trend trend-garden">
       <div class="trend-content">
-        <ul>
+        <ul class="trends-tags">
           <li class="main-tag">
             <a href="#0">lifestyle</a>
           </li>
@@ -64,7 +95,7 @@
     </article>
     <article class="article-trend trend-cheeses">
       <div class="trend-content">
-        <ul>
+        <ul class="trends-tags">
           <li class="main-tag">
             <a href="#0">food</a>
           </li>
@@ -76,7 +107,7 @@
     </article>
     <article class="article-trend trend-hike">
       <div class="trend-content">
-        <ul>
+        <ul class="trends-tags">
           <li class="main-tag">
             <a href="#0">lifestyle</a>
           </li>
@@ -91,7 +122,7 @@
     </article>
     <article class="article-trend trend-vitamins">
       <div class="trend-content">
-        <ul>
+        <ul class="trends-tags">
           <li class="main-tag">
             <a href="#0">food</a>
           </li>
@@ -162,8 +193,7 @@
           </ul>
           <h2 class="post-title">
             <a href="#0"> 
-              <p>лучшие музыкальные фестивали этого</p>
-              <p>лета</p>
+              <p>лучшие музыкальные фестивали этого лета</p>
             </a>
           </h2>
           <p class="main-time">10 июня 2019</p>
@@ -287,7 +317,7 @@
         <form class="email-form">
           <label>
             <span class="visually-hidden">поле ввода email</span>
-            <input type="email" placeholder="Ваш email-адрес" class="email-field" required>
+            <input type="email" placeholder="Ваш email-адрес" class="text-field" required>
           </label>
           <button class="button">
             <span class="button-text">Подписаться</span>
