@@ -325,6 +325,9 @@ header::before {
 
 .menu-img {
   display: none;
+  background-image: url(../svg/menu.svg);
+  background-size: contain; 
+  background-repeat: no-repeat;
 }
 
 .menu-item {
@@ -964,8 +967,9 @@ footer {
 
   .menu-img {
     margin: 17px -10px -6px 0;
-    display: block;
+    width: 33px;
     height: 33px;
+    display: block;
   }
 
   .site-title {
@@ -1248,9 +1252,12 @@ footer {
   }
 
   .menu-img {
-    margin: -20px -29px -6px 0;
+    background-position-x: 5px;
+    background-position-y: -2px;
+    margin: -4px -26px 0 0;
     display: block;
-    height: 33px;
+    width: 35px;
+    height: 36px;
   }
 
   .site-title {
